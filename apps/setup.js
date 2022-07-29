@@ -48,9 +48,9 @@
    
     
  
-    //  app.use(bodyParser.json({limit: '50mb'}));
-    //  app.use(bodyParser.urlencoded({limit: '50mb', parameterLimit:50000, extended: true }));
-    //  app.use(cookieParser());
+    app.use(bodyParser.json({limit: '50mb'}));
+    app.use(bodyParser.urlencoded({limit: '50mb', parameterLimit:50000, extended: true }));
+    app.use(cookieParser());
     //  app.use(expressSession({
     //      cookie: {
     //          path: '/', httpOnly: true, maxAge: configs.SESSION

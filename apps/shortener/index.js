@@ -3,5 +3,5 @@ module.exports = function(app){
     var EntityName = 'shorrener'; //use for collection;
 
     app.use( '/'+Name, require('./controller')(Name, EntityName).router );
-    //app.use('/api/'+Name, require('./api')(Name, EntityName).router );
+    app.use('/api/'+Name, require('./api')(Name, EntityName).router );
 }
